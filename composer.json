@@ -1,0 +1,40 @@
+{
+    "name": "xchert/object-schema",
+    "description": "Format-independent schemas for data structures.",
+    "type": "library",
+    "keywords": [],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dustin Simon"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/x-chert/object-schema/issues",
+        "source": "https://github.com/x-chert/object-schema"
+    },
+    "autoload": {
+        "psr-4": {
+            "Xchert\\Schema\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Xchert\\Schema\\Test\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "^8.4",
+        "symfony/validator": "^8.1",
+        "xchert/util": "^1.1.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^13.4",
+        "symfony/yaml": "^8.1"
+    },
+    "archive": {
+        "exclude": [
+            "/.github"
+        ]
+    }
+}
