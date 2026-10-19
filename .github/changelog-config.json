@@ -1,0 +1,32 @@
+{
+	"categories": [
+		{
+			"title": "### New features",
+			"labels": [
+				"feature",
+				"enhancement"
+			]
+		},
+		{
+			"title": "### Bugfixes",
+			"labels": [
+				"bug",
+				"bugfix"
+			]
+		},
+		{
+			"title": "### Documentation",
+			"labels": [
+				"documentation"
+			]
+		},
+		{
+			"title": "### Other",
+			"labels": [
+				"devops"
+			]
+		}
+	],
+	"template": "# #{{TO_TAG}}\n#{{CHANGELOG}}",
+	"pr_template": "* [##{{NUMBER}} - #{{TITLE}}](#{{URL}})"
+}

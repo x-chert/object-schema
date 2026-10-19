@@ -2,7 +2,14 @@
     "name": "xchert/object-schema",
     "description": "Format-independent schemas for data structures.",
     "type": "library",
-    "keywords": [],
+    "keywords": [
+        "schema",
+        "object-schema",
+        "data-structure",
+        "types",
+        "validation",
+        "constraints"
+    ],
     "license": "MIT",
     "authors": [
         {
