@@ -1,0 +1,17 @@
+# schemas of an order document, e.g. exchanged as XML
+- name: order
+  description: An order with its items
+  properties:
+    - { name: id, type: integer, nullable: false }
+    - { name: number, type: string, constraints: [{ $constraint: NotBlank }, { $constraint: Length, max: 20 }] }
+    - { name: placedAt, type: datetime }
+    - { name: status, type: 'enum<open,shipped,cancelled>', default: open }
+    - { name: express, type: boolean, default: false }
+    - { name: item, type: 'list<object<item>>', constraints: [{ $constraint: Count, min: 1 }] }
+    - { name: note, type: string, nullable: true }
+- name: item
+  properties:
+    - { name: sku, type: string, constraints: [{ $constraint: NotBlank }] }
+    - { name: quantity, type: integer, constraints: [{ $constraint: Positive }] }
+    - { name: price, type: float }
+    - { name: tag, type: 'list<string>', default: [] }
