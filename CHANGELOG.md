@@ -1,3 +1,9 @@
+# v1.0.1
+### New features
+
+* [#3 - Updated Symfony requirements](https://github.com/x-chert/object-schema/pull/3)
+
+
 # v1.0.0
 ### New features
 
